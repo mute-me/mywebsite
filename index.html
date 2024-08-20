@@ -1,8 +1,49 @@
+<!DOCTYPE html>
 <html>
-<body>
 
-<div>
-<h1>Name: Swikar Rai</h1>
-</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <h3>Creator</h3>
+  </div>
+  <div>
+    Name: Swikar Rai
+  </div>
+  <div>
+    Age: 16
+  </div>
+  <div>
+    <h2>
+      Addition:
+    </h2>
+  </div>
+  <form>
+  <input type = "number" id= "num1">
+    <div>
+      <input type="number" id = "num2">
+    </div>
+    <div>
+      <input onclick = "add()" type = "button" value = "add">
+    </div>
+    
+  </form>
+  <script>
+    function add()
+      {
+      
+      
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    var sum = parseInt(a) + parseInt(b);
+    document.write("sum:"+ sum);
+    }
+  </script>
 </body>
+
 </html>
