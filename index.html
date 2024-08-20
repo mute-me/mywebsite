@@ -22,26 +22,24 @@
             position: relative;
         }
 
-        .falling-ball {
-            position: absolute;
-            top: -100px;
-            left: 50%;
-            width: 50px;
-            height: 50px;
-            background-color: #007acc;
-            border-radius: 50%;
-            transform: translateX(-50%);
-            animation: fall 2s ease-in-out forwards, splash 2s 2s ease-in-out forwards, fillScreen 4s 4s ease-in-out forwards;
-            z-index: -2;
+      .falling-ball {
+      position: absolute;
+      top: -50px;
+      width: 30px;
+      height: 30px;
+      background-color: #007acc;
+      border-radius: 50%;
+      animation: fall 2s ease-in-out forwards;
+      z-index: -1;
         }
 
         @keyframes fall {
             0% {
-                top: -100px;
+                top: -50px;
             }
 
             100% {
-                top: 80%;
+                top: 100%;
             }
         }
 
@@ -303,6 +301,19 @@
         }
 
         startGame();
+      // Random Falling Balls
+      function createFallingBall() {
+          const ball = document.createElement('div');
+          ball.classList.add('falling-ball');
+          ball.style.left = `${Math.random() * 100}vw`;
+          document.body.appendChild(ball);
+
+          setTimeout(() => {
+              ball.remove();
+          }, 2000);
+      }
+
+      setInterval(createFallingBall, 500);
     </script>
 </body>
 
