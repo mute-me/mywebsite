@@ -79,44 +79,7 @@
             z-index: 1;
         }
 
-        .calculator {
-            background: rgba(50, 50, 50, 0.7);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            width: 300px;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-        }
 
-        .calculator input[type="number"] {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #333;
-            border: 1px solid #555;
-            border-radius: 5px;
-            font-size: 18px;
-            color: #ffffff;
-        }
-
-        .calculator input[type="button"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            background-color: #00bcd4;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .calculator input[type="button"]:hover {
-            background-color: #0097a7;
-        }
 
         .result {
             margin-top: 20px;
@@ -198,17 +161,7 @@ src="https://www.instagram.com/tf_kamisx/reel/C_X2ylVSzN3/?locale=ru&hl=am-et">
         Name: Swikar Rai
     </div>
 
-    <div class="calculator">
-        <form>
-            <input type="number" id="num1" placeholder="Enter first number">
-            <input type="number" id="num2" placeholder="Enter second number">
-            <input onclick="calculate('add')" type="button" value="Add">
-            <input onclick="calculate('subtract')" type="button" value="Subtract">
-            <input onclick="calculate('multiply')" type="button" value="Multiply">
-            <input onclick="calculate('divide')" type="button" value="Divide">
-        </form>
-        <div class="result" id="result"></div>
-    </div>
+   
 
     <div class="game-container" id="gameContainer"></div>
     <div class="controls">
